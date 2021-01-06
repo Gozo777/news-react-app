@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "AWS 101",
+    "author": "Wei-Chi Chou",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "categoryId": "devops",
+    "unixTimeStamp": 1588636800,
+    "date": "Tuesday, 05 May 2020",
+    "imgUrl": "https://miro.medium.com/max/4000/1*b_al7C5p26tbZG4sy-CWqw.png"
+  },
+  {
+    "id": 4,
+    "title": "Trying Docker",
+    "author": "Simona Winnekes",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "categoryId": "devops",
+    "unixTimeStamp": 1589068800,
+    "date": "Sunday, 10 May 2020",
+    "imgUrl": "https://blog.xebialabs.com/wp-content/uploads/2019/05/docker-e1558536954364.jpg"
+  }
+]

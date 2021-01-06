@@ -1,0 +1,36 @@
+.latest {
+  width: 150px;
+  height: 250px;
+  margin: 5rem;
+  background-color: rgb(237, 236, 240);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  padding: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.latest-info {
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: -5rem;
+}
+
+.latest:hover {
+  transform: translateY(1%);
+}
+
+.latest_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* keep in a row
+flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+  */
