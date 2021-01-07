@@ -119,7 +119,7 @@ console.log(comments);
           <br></br>
           <br></br>
           <div>
-      Comment Board
+      <h2>Comment Board</h2>
       <div>
         {comments.map((comment) => {
           return <Comment

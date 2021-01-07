@@ -23,8 +23,9 @@ export default function CommentForm(props) {
     console.log("add comment", name, comment);
     // CALL CALLBACK, PASS IN NAME AS AN ARGUMENT
     props.addCommentToState(name, comment);
-    localStorage.removeItem(("name", "comment"));
+    localStorage.removeItem(("comment"));
     setComment("");
+    localStorage.removeItem(("name"));
     setName("");
   }
 
