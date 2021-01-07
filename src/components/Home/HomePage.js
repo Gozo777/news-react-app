@@ -3,8 +3,17 @@ import axios from "axios";
 import Latest from './Latest';
 import TheMostLatest from './TheMostLatest';
 
+function compare_date(a, b) {
+  return b.unixTimeStamp - a.unixTimeStamp;
+}
+
+function compare_name(b, a) {
+  return a.author.localeCompare(b.author);
+}
+
 export default function HomePage() {
 
+  const [sort_by, set_sort_by] = useState("date");
   const [articles, set_Article] = useState([]);
 
   useEffect(() => {
@@ -37,6 +46,14 @@ export default function HomePage() {
   
   console.log("final", mostRecentObject)
 
+  const compareFunction = sort_by === "date" ? compare_date : compare_name;
+
+  var sortedData = [...myData].sort(compareFunction);
+
+  const change_sorting = (event) => {
+    set_sort_by(event.target.value);
+  };
+
 
   return (
     <div>
@@ -57,8 +74,15 @@ export default function HomePage() {
       })}
         </div>
       <h2><strong>All the latest News news() articles</strong></h2>
+      <p>
+        Sort order:{" "}
+        <select onChange={change_sorting} value={sort_by}>
+          <option value="date">Sort by date</option>
+          <option value="name">Sort by name</option>
+        </select>
+      </p>
       <div className='latest_container'>
-      {myData.map(myData => {
+      {sortedData.map(myData => {
         return (
           <Latest
             key={myData.id}
