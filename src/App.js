@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HomePage from "./components/Home/HomePage";
 import SearchPage from "./components/Search/SearchPage";
-import Article from "./components/Articles-Comment/Article";
+import Article from "./components/Articles-Comment/CommentBoard";
 import CategoryIdDetails from "./components/Params/CategoryIdDetails";
 import ArticleIdDetails from "./components/Params/ArticleIdDetails";
 import NavBar from "./components/NavBar/NavBar";
