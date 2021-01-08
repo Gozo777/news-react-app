@@ -7,8 +7,8 @@ function compare_date(a, b) {
   return b.unixTimeStamp - a.unixTimeStamp;
 }
 
-function compare_name(b, a) {
-  return a.author.localeCompare(b.author);
+function compare_name(a, b) {
+  return a.title.localeCompare(b.title);
 }
 
 export default function HomePage() {
@@ -78,7 +78,7 @@ export default function HomePage() {
         Sort order:{" "}
         <select onChange={change_sorting} value={sort_by}>
           <option value="date">Sort by date</option>
-          <option value="name">Sort by name</option>
+          <option value="name">Sort by title name</option>
         </select>
       </p>
       <div className='latest_container'>
